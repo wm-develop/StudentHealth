@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.studenthealth.android">
+
+    <application
+        android:name=".StudentHealthApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentHealth">
+        <activity
+            android:name=".ui.individuality.mycollection.MyCollectionActivity">
+        </activity>
+        <activity android:name=".ui.individuality.information.ChangeInformationActivity" />
+        <activity android:name=".ui.individuality.information.PersonalHomePageActivity">
+
+        </activity>
+        <activity android:name=".ui.individuality.login.ForgetPasswordActivity" />
+        <activity android:name=".ui.individuality.login.RegisterActivity" />
+        <activity android:name=".ui.individuality.login.LoginActivity" />
+        <activity android:name=".ui.common.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
