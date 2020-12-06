@@ -31,10 +31,11 @@ android {
     sourceSets {
         main {
             res.srcDirs = [
+                    'src/main/res/',
                     'src/main/res/layout/individuality/information',
                     'src/main/res/layout/individuality/login',
                     'src/main/res/layout/individuality/mycollection',
-                    'src/main/res/layout/individuality/myreply',
+                    'src/main/res/layout/individuality/reply',
                     'src/main/res/layout/individuality/mytopic',
                     'src/main/res/layout/individuality/settings',
                     'src/main/res/layout/individuality',
@@ -42,9 +43,7 @@ android {
                     'src/main/res/layout/community',
                     'src/main/res/layout/health',
                     'src/main/res/layout/schedule',
-                    'src/main/res/layout/shop',
-                    'src/main/res/layout',
-                    'src/main/res/',
+                    'src/main/res/layout/shop'
             ]
         }
     }

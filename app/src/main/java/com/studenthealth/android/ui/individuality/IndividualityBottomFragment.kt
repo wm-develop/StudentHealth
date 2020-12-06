@@ -7,7 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.studenthealth.android.R
+import com.studenthealth.android.SettingActivity
 import com.studenthealth.android.ui.individuality.mycollection.MyCollectionActivity
+import com.studenthealth.android.ui.individuality.myreply.ReplyActivity
+import com.studenthealth.android.ui.individuality.mytopic.MyTopicActivity
 import kotlinx.android.synthetic.main.fragment_individuality_bottom.*
 
 class IndividualityBottomFragment : Fragment() {
@@ -20,6 +23,18 @@ class IndividualityBottomFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         collection.setOnClickListener {
             val intent = Intent(activity, MyCollectionActivity::class.java)
+            startActivity(intent)
+        }
+        topic.setOnClickListener {
+            val intent = Intent(activity, MyTopicActivity::class.java)
+            startActivity(intent)
+        }
+        reply.setOnClickListener {
+            val intent = Intent(activity, ReplyActivity::class.java)
+            startActivity(intent)
+        }
+        settings.setOnClickListener {
+            val intent = Intent(activity, SettingActivity::class.java)
             startActivity(intent)
         }
     }

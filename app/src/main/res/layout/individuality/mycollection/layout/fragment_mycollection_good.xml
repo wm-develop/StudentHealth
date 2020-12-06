@@ -6,22 +6,13 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mycollectionGoodRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        app:cardCornerRadius="4dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/homePageTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="P534535343432424234324324324" />
+    </androidx.recyclerview.widget.RecyclerView>
 
-    </com.google.android.material.card.MaterialCardView>
+
 
 </LinearLayout>
