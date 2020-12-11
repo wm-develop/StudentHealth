@@ -76,4 +76,13 @@
     <string name="about">关于健康校园</string>
     <string name="version">版本</string>
     <string name="exit_current_account">退出当前账户</string>
+    <string name="share">分享</string>
+    <string name="input_hint">我也说一句</string>
+    <string name="all_reply">全部回复</string>
+    <string name="only_ts">只看楼主</string>
+    <string name="issue_topic">发布帖子</string>
+    <string name="need_title">请输入标题</string>
+    <string name="need_content">来吧，尽情发挥吧…</string>
+    <string name="issue">发布</string>
+    <string name="issue_reply">发表回复</string>
 </resources>

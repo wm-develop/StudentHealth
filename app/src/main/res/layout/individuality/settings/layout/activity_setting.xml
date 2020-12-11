@@ -88,17 +88,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/messageAndRemind"
         app:layout_constraintEnd_toEndOf="@+id/messageAndRemind" />
 
-    <View
-        android:id="@+id/view6"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/grey600"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/messageAndRemind" />
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/helpAndFeedBack"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -112,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view6" />
+        app:layout_constraintTop_toBottomOf="@+id/messageAndRemind" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -233,17 +222,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/clearCache"
         app:layout_constraintEnd_toEndOf="@+id/clearCache" />
 
-    <View
-        android:id="@+id/view10"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/grey600"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clearCache" />
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/about"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -257,7 +235,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view10" />
+        app:layout_constraintTop_toBottomOf="@+id/clearCache" />
 
     <TextView
         android:id="@+id/textView32"

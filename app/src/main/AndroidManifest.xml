@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentHealth">
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".ui.community.IssueReplyActivity"></activity>
+        <activity android:name=".ui.community.IssueTopicActivity" />
+        <activity android:name=".ui.community.TopicActivity" />
+        <activity android:name=".ui.individuality.settings.SettingActivity" />
         <activity android:name=".ui.individuality.myreply.ReplyActivity" />
         <activity android:name=".ui.individuality.mytopic.MyTopicActivity" />
         <activity android:name=".ui.individuality.mycollection.MyCollectionActivity" />

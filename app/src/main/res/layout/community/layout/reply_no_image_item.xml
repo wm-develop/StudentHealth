@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@+id/communityTitle"
+    app:layout_constraintTop_toTopOf="@+id/communityTitle">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/replyUserImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/replyUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="用户名"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/replyUserImage"
+        app:layout_constraintTop_toTopOf="@+id/replyUserImage" />
+
+    <TextView
+        android:id="@+id/issueTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="时间，具体到分"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/replyUserImage"
+        app:layout_constraintStart_toEndOf="@+id/replyUserImage" />
+
+    <LinearLayout
+        android:id="@+id/replyLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replyUserImage">
+
+        <TextView
+            android:id="@+id/replyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:singleLine="false"
+            android:text="这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容这里是回复的内容"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/grey600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replyLinearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

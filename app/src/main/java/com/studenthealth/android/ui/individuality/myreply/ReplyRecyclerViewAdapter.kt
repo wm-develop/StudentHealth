@@ -38,7 +38,7 @@ class ReplyRecyclerViewAdapter(val context: Context, val replyList: List<ReplyDa
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.reply_item, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.reply_with_image_item, parent, false)
         return ViewHolder(view)
     }
 

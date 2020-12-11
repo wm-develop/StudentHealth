@@ -11,7 +11,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/health"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="82dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:drawableTop="@drawable/jiankang"
         android:insetTop="0dp"
@@ -20,13 +20,14 @@
         android:textAllCaps="false"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@color/ripple_color" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/community"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="82dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:drawableTop="@drawable/shequ"
         android:insetTop="0dp"
@@ -34,13 +35,14 @@
         android:text="@string/community"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/health"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:rippleColor="@color/ripple_color" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/shop"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="82dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:drawableTop="@drawable/shangcheng"
         android:insetTop="0dp"
@@ -48,13 +50,14 @@
         android:text="@string/shop"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/community"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:rippleColor="@color/ripple_color" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/schedule"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="82dp"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:drawableTop="@drawable/jihua"
         android:insetTop="0dp"
@@ -62,7 +65,8 @@
         android:text="@string/schedule"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/shop"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:rippleColor="@color/ripple_color" />
 
     <com.google.android.material.button.MaterialButton
@@ -78,7 +82,35 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/schedule"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:rippleColor="@color/ripple_color" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,8 @@
-package com.studenthealth.android
+package com.studenthealth.android.ui.individuality.settings
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.studenthealth.android.R
 import kotlinx.android.synthetic.main.activity_setting.*
 
 class SettingActivity : AppCompatActivity() {

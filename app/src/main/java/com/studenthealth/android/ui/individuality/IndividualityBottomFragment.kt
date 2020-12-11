@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.studenthealth.android.R
-import com.studenthealth.android.SettingActivity
+import com.studenthealth.android.ui.individuality.settings.SettingActivity
 import com.studenthealth.android.ui.individuality.mycollection.MyCollectionActivity
 import com.studenthealth.android.ui.individuality.myreply.ReplyActivity
 import com.studenthealth.android.ui.individuality.mytopic.MyTopicActivity

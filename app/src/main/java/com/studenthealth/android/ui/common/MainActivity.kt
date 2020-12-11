@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.studenthealth.android.R
+import com.studenthealth.android.ui.community.CommunityFragment
 import com.studenthealth.android.ui.health.HealthFragment
 import com.studenthealth.android.ui.individuality.IndividualityUnloginFragment
 import kotlinx.android.synthetic.main.fragment_bottom_nav.*
@@ -58,6 +59,7 @@ class MainActivity : AppCompatActivity() {
                 it.setTextColor(resources.getColor(R.color.black))
                 it.setCompoundDrawablesRelativeWithIntrinsicBounds(null, getDrawable(R.drawable.wode), null, null)
             }
+            replaceFragment(CommunityFragment())
         }
 
         shop.setOnClickListener {

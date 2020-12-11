@@ -32,7 +32,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="20dp"
             android:layout_marginTop="55dp"
-            android:layout_toEndOf="@+id/circleImageView"
+            android:layout_toEndOf="@+id/userImg"
             android:text="@string/name"
             android:textColor="@color/black"
             android:textSize="18sp"
