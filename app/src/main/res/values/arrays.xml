@@ -4,4 +4,10 @@
         <item>@string/male</item>
         <item>@string/female</item>
     </string-array>
+    <string-array name="sport_type">
+        <item>全部记录</item>
+        <item>健走</item>
+        <item>体能跑步</item>
+        <item>户外骑行</item>
+    </string-array>
 </resources>

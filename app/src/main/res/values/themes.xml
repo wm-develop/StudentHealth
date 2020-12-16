@@ -32,4 +32,10 @@
         <item name="paddingEnd">0dp</item>
         <item name="android:textSize">18sp</item>
     </style>
+
+    <!--动画:向上动画-->
+    <style name="AnimUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/set_up_in</item>
+        <item name="android:windowExitAnimation">@anim/set_up_out</item>
+    </style>
 </resources>

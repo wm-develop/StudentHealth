@@ -30,6 +30,7 @@
         app:boxBackgroundMode="filled"
         app:boxStrokeColor="@color/ripple_color"
         app:boxStrokeWidth="2dp"
+        app:endIconMode="password_toggle"
         app:endIconTint="@color/ripple_color"
         app:hintTextColor="@color/text_hint"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +39,7 @@
         app:startIconDrawable="@drawable/mima">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/accountPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password_hint"
@@ -67,6 +69,7 @@
         app:startIconDrawable="@drawable/zhanghao">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/account_hint"

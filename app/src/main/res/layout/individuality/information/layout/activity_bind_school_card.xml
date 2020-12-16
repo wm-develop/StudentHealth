@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.individuality.information.BindSchoolCardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bindSchoolCardToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bind_school_card"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="13dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bindSchoolCardToolbar">
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bind_school_card_hint" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/studentIDTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:textColorHint="@color/text_hint"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/ripple_color"
+        app:boxStrokeWidth="2dp"
+        app:endIconTint="@color/ripple_color"
+        app:hintTextColor="@color/text_hint"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:startIconDrawable="@drawable/zhanghao">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/student_number"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/text_hint"
+            android:textCursorDrawable="@drawable/input_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/informationPortalPasswordTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/text_hint"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/ripple_color"
+        app:boxStrokeWidth="2dp"
+        app:endIconTint="@color/ripple_color"
+        app:hintTextColor="@color/text_hint"
+        app:layout_constraintEnd_toEndOf="@+id/studentIDTextInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/studentIDTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/studentIDTextInputLayout"
+        app:startIconDrawable="@drawable/mima">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/information_portal_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/text_hint"
+            android:textCursorDrawable="@drawable/input_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/olanSystemPasswordTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/text_hint"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="@color/ripple_color"
+        app:boxStrokeWidth="2dp"
+        app:endIconTint="@color/ripple_color"
+        app:hintTextColor="@color/text_hint"
+        app:layout_constraintEnd_toEndOf="@+id/studentIDTextInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/studentIDTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/informationPortalPasswordTextLayout"
+        app:startIconDrawable="@drawable/mima">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/olan_system_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/text_hint"
+            android:textCursorDrawable="@drawable/input_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bindMaterialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/ripple_color"
+        android:text="@string/bind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/olanSystemPasswordTextLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

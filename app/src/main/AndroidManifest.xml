@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentHealth">
-        <activity android:name=".ui.community.IssueReplyActivity"></activity>
+        <activity android:name=".ui.individuality.information.BindSchoolCardActivity"></activity>
+        <activity android:name=".ui.health.BodyWeightActivity" />
+        <activity android:name=".ui.health.SportRecordActivity" />
+        <activity android:name=".ui.health.EverydaySportActivity" />
+        <activity android:name=".ui.community.IssueReplyActivity" />
         <activity android:name=".ui.community.IssueTopicActivity" />
         <activity android:name=".ui.community.TopicActivity" />
         <activity android:name=".ui.individuality.settings.SettingActivity" />
@@ -18,7 +22,8 @@
         <activity android:name=".ui.individuality.mytopic.MyTopicActivity" />
         <activity android:name=".ui.individuality.mycollection.MyCollectionActivity" />
         <activity android:name=".ui.individuality.information.ChangeInformationActivity" />
-        <activity android:name=".ui.individuality.information.PersonalHomePageActivity" />
+        <activity android:name=".ui.individuality.information.PersonalHomePageActivity">
+        </activity>
         <activity android:name=".ui.individuality.login.ForgetPasswordActivity" />
         <activity android:name=".ui.individuality.login.RegisterActivity" />
         <activity android:name=".ui.individuality.login.LoginActivity" />

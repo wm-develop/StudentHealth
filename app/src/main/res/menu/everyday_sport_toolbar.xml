@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/calendar"
+        android:title="@string/calendar"
+        android:icon="@drawable/rili"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dataExplain"
+        app:showAsAction="never"
+        android:title="@string/data_explain" />
+    <item
+        android:id="@+id/healthCare"
+        app:showAsAction="never"
+        android:title="@string/health_care" />
+</menu>
